@@ -35,7 +35,7 @@ if [ $(which docker) ]; then
   --name=dockserver \
   -e PUID=1000 \
   -e PGID=1000 \
-  -e TZ=Europe/London \
+  -e TZ=America/New_York \
   -v /opt/dockserver:/opt/dockserver:rw \
   ghcr.io/dockserver/docker-dockserver:latest
 fi
